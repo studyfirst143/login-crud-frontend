@@ -43,7 +43,7 @@ const UpdateStudentModal = ({ isOpen, onClose, fetchstud, selectedstudent }) => 
         }
 
         try {
-            await axios.put(`http://localhost:5000/api/student/${id}`, { fullname, gender, age, address });
+            await axios.put(`https://login-crud-backend.onrender.com/api/student/${id}`, { fullname, gender, age, address });
 
             Swal.fire({
                 icon: 'success',

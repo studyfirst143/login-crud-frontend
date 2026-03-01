@@ -26,7 +26,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:5000/api/register", {
+            const response = await axios.post("https://login-crud-backend.onrender.com/api/register", {
                 fullname,
                 email,
                 password

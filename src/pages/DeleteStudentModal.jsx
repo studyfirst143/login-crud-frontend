@@ -22,7 +22,7 @@ const DeleteStudentModal = ({ isOpen, onClose, fetchstud, selectedstudent }) => 
         if (!id) return;
 
         try {
-            await axios.delete(`http://localhost:5000/api/student/${id}`);
+            await axios.delete(`https://login-crud-backend.onrender.com/api/student/${id}`);
 
             Swal.fire({
                 icon: 'success',

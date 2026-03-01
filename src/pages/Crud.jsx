@@ -23,7 +23,7 @@ const Crud = () => {
 
     const fetchstudent = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/student");
+            const response = await axios.get("https://login-crud-backend.onrender.com/api/student");
             setStudent(response.data.studs);
         } catch (error) {
             console.log(error.response?.data || error.message);
